@@ -13,11 +13,6 @@ A humanitarian campaign platform inspired by the legendary Live Aid concert, bui
 - **Loading States**: Professional UX with loading indicators
 - **About Page**: Mission, history, and values of the initiative
 
-## Demo Credentials
-
-- **Email**: user@example.com
-- **Password**: password
-
 ## Development
 
 ### Prerequisites
@@ -47,19 +42,6 @@ npm run build
 ng build --prod
 ```
 
-### Testing
-
-```bash
-# Run unit tests
-npm test
-# or
-ng test
-
-# Run e2e tests
-npm run e2e
-# or
-ng e2e
-```
 
 ## Project Structure
 
@@ -83,14 +65,6 @@ src/
 └── environments/            # Environment configurations
 ```
 
-## Technologies Used
-
-- **Angular**: Framework for building the application
-- **TypeScript**: Type-safe development
-- **RxJS**: Reactive programming
-- **SCSS**: Component styling
-- **Angular CLI**: Build and development tools
-
 ## Contributing
 
 1. Fork the repository
@@ -99,9 +73,6 @@ src/
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## License
-
-This project is licensed under the MIT License.
 
 ## Acknowledgments
 
