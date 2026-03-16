@@ -1,34 +1,110 @@
 # Live Aid Serbia
 
-An MVP web platform that modernizes humanitarian activism. Users can browse charity campaigns, view artist live streams, and donate money through gamified donation experiences.
+A humanitarian campaign platform inspired by the legendary Live Aid concert, built with Angular.
 
 ## Features
 
-- Browse charity campaigns with progress bars
-- View campaign details and donate via template-driven or reactive forms
-- Modern UI with responsive design
-- Demonstrates Angular concepts: directives, components, services, HTTP, interceptors
+- **Campaign Management**: View and support various humanitarian campaigns
+- **User Authentication**: Secure login system with demo credentials
+- **Donation System**: Template-driven and reactive forms for donations
+- **Artists Showcase**: Display participating artists and musicians
+- **Responsive Design**: Mobile-friendly interface
+- **Real-time Validation**: Comprehensive form validation with user feedback
+- **Loading States**: Professional UX with loading indicators
+- **About Page**: Mission, history, and values of the initiative
+
+## Demo Credentials
+
+- **Email**: user@example.com
+- **Password**: password
 
 ## Development
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
+### Prerequisites
 
-## Build
+- Node.js (v12 or higher)
+- npm or yarn
+- Angular CLI
 
-Run `ng build` to build the project.
+### Installation
 
-## Technologies
+```bash
+# Clone the repository
+git clone https://github.com/YOUR_USERNAME/live-aid-serbia.git
+cd live-aid-serbia
 
-- Angular 8
-- TypeScript
-- RxJS
-- HttpClient
-- FormsModule, ReactiveFormsModule
+# Install dependencies
+npm install
 
-## Running end-to-end tests
+# Start development server
+npm start
+# or
+ng serve
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+# Build for production
+npm run build
+# or
+ng build --prod
+```
 
-## Further help
+### Testing
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+```bash
+# Run unit tests
+npm test
+# or
+ng test
+
+# Run e2e tests
+npm run e2e
+# or
+ng e2e
+```
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── components/          # Reusable UI components
+│   │   ├── campaign-card/   # Campaign display cards
+│   │   ├── donation-widget/ # Donation form container
+│   │   ├── loading-spinner/ # Loading indicator
+│   │   └── navbar/          # Navigation component
+│   ├── forms/               # Donation form components
+│   ├── pages/               # Route-based pages
+│   │   ├── home/            # Landing page
+│   │   ├── artists/         # Artists showcase
+│   │   ├── about/           # About page
+│   │   └── campaign-details/# Individual campaign view
+│   ├── services/            # Business logic services
+│   └── interceptors/        # HTTP interceptors
+├── assets/                  # Static assets
+└── environments/            # Environment configurations
+```
+
+## Technologies Used
+
+- **Angular**: Framework for building the application
+- **TypeScript**: Type-safe development
+- **RxJS**: Reactive programming
+- **SCSS**: Component styling
+- **Angular CLI**: Build and development tools
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.
+
+## Acknowledgments
+
+- Inspired by the original Live Aid concert (1985)
+- Built as part of advanced web development coursework
+- Dedicated to humanitarian causes worldwide
