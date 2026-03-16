@@ -1,0 +1,44 @@
+.card {
+  border: 1px solid #ddd;
+  padding: 15px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  background: white;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.progress-container {
+  background: #eee;
+  height: 10px;
+  border-radius: 5px;
+  overflow: hidden;
+  margin: 10px 0;
+}
+
+.progress-bar {
+  background: #4CAF50;
+  height: 100%;
+  transition: width 0.3s;
+}
+
+.goal-reached {
+  color: green;
+  font-weight: bold;
+}
+
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0056b3;
+}

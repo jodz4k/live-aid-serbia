@@ -1,0 +1,14 @@
+<div class="artists-container">
+  <h1>Participating Artists</h1>
+  <p class="artists-intro">Meet the talented artists who are part of the Live Aid Serbia movement, using their music to make a difference.</p>
+  <div class="artists-list">
+    <div *ngFor="let artist of artists" class="artist-card">
+      <img [src]="getArtistImage(artist.image)" [alt]="artist.name" class="artist-image">
+      <div class="artist-info">
+        <h3>{{artist.name}}</h3>
+        <p class="genre">{{artist.genre}}</p>
+        <p class="bio">{{artist.bio}}</p>
+      </div>
+    </div>
+  </div>
+</div>

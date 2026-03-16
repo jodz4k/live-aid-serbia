@@ -1,0 +1,10 @@
+<div class="card">
+  <h3>{{campaign.title}}</h3>
+  <p>{{campaign.description}}</p>
+  <div class="progress-container">
+    <div class="progress-bar" [style.width.%]="getProgress()"></div>
+  </div>
+  <p>${{campaign.currentAmount}} / ${{campaign.goal}}</p>
+  <p *ngIf="campaign.currentAmount >= campaign.goal" class="goal-reached">Goal reached!</p>
+  <button [routerLink]="['/campaign', campaign.id]">View Details</button>
+</div>

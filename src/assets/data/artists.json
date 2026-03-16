@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Artist One",
+    "genre": "Pop",
+    "image": "artist1.jpg",
+    "bio": "Bio for artist one"
+  },
+  {
+    "id": 2,
+    "name": "Artist Two",
+    "genre": "Rock",
+    "image": "artist2.jpg",
+    "bio": "Bio for artist two"
+  }
+]

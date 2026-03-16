@@ -1,0 +1,23 @@
+<div class="login-modal" *ngIf="isVisible">
+  <div class="login-overlay" (click)="close()"></div>
+  <div class="login-content">
+    <h2>Login</h2>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" [(ngModel)]="email" required #emailInput="ngModel">
+        <div class="error" *ngIf="emailInput.invalid && emailInput.touched">Email is required</div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" [(ngModel)]="password" required #passwordInput="ngModel">
+        <div class="error" *ngIf="passwordInput.invalid && passwordInput.touched">Password is required</div>
+      </div>
+      <button type="submit" [disabled]="loginForm.invalid || isLoading" class="login-btn">
+        {{isLoading ? 'Logging in...' : 'Login'}}
+      </button>
+    </form>
+    <p class="demo-note">Demo: user@example.com / password</p>
+    <button (click)="close()" class="close-btn">Close</button>
+  </div>
+</div>

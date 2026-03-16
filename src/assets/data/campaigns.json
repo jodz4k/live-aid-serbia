@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Help Children's Hospital",
+    "description": "Fundraising for hospital equipment",
+    "goal": 5000,
+    "currentAmount": 2300,
+    "artistId": 2,
+    "isActive": true
+  },
+  {
+    "id": 2,
+    "title": "Support Local Schools",
+    "description": "Providing educational materials",
+    "goal": 3000,
+    "currentAmount": 1500,
+    "artistId": 1,
+    "isActive": true
+  }
+]

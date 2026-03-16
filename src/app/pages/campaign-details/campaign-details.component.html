@@ -1,0 +1,28 @@
+<div class="campaign-details" *ngIf="campaign; else loading">
+  <button class="back-button" routerLink="/home">← Back to Campaigns</button>
+  <div class="campaign-header">
+    <h2>{{campaign.title}}</h2>
+    <p class="campaign-description">{{campaign.description}}</p>
+  </div>
+  <div class="campaign-stats">
+    <div class="stat">
+      <h3>Goal</h3>
+      <p>${{campaign.goal}}</p>
+    </div>
+    <div class="stat">
+      <h3>Current Amount</h3>
+      <p>${{campaign.currentAmount}}</p>
+    </div>
+    <div class="stat">
+      <h3>Progress</h3>
+      <p>{{getProgress()}}%</p>
+    </div>
+  </div>
+  <div class="progress-container">
+    <div class="progress-bar" [style.width.%]="getProgress()"></div>
+  </div>
+  <app-donation-widget [campaign]="campaign"></app-donation-widget>
+</div>
+<ng-template #loading>
+  <div class="loading">Loading campaign details...</div>
+</ng-template>

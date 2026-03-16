@@ -1,0 +1,22 @@
+import { Component, OnInit } from '@angular/core';
+import { Artist } from '../../models/artist';
+import { ArtistService } from '../../services/artist.service';
+
+@Component({
+  selector: 'app-artists',
+  templateUrl: './artists.component.html',
+  styleUrls: ['./artists.component.css']
+})
+export class ArtistsComponent implements OnInit {
+  artists: Artist[] = [];
+
+  constructor(private artistService: ArtistService) { }
+
+  ngOnInit(): void {
+    this.artistService.getArtists().subscribe(artists => this.artists = artists);
+  }
+
+  getArtistImage(imageName: string): string {
+    return `assets/images/artists/${imageName}`;
+  }
+}
